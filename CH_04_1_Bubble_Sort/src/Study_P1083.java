@@ -16,11 +16,15 @@ public class Study_P1083 {
 			if(max_num==0) break;
 			int max = arrayInt[i];
 			int maxIndx = i ; 
-			for(int j = i ; j < i + max_num+1 && j < input_num ; j++) {
+			for(int j = i ; j < i + max_num ; j++) {
+				
 				if(max < arrayInt[j]) {
+					System.out.println(arrayInt[j] + " ");
+					System.out.println(max + " ");
 					max = arrayInt[j];
 					maxIndx = j;
-							
+					
+					
 				}
 			}      
 			for(int j = maxIndx ; j > i; j--) {
